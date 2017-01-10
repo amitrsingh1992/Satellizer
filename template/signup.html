@@ -1,0 +1,35 @@
+<div class="container">
+  <table>
+    <form name="signup">
+      <tr>
+        <td>Email Id :</td>
+        <td>
+          <input type="email" ng-model="data.emailId" placeholder="provide your email id">
+        </td>
+      </tr>
+      <tr>
+        <td>Mobile No :</td>
+        <td>
+          <input type="text" name="mobileNo"  placeholder="please do not add std/ISD code">
+        </td>
+      </tr>
+      <tr>
+        <td>Password:</td>
+        <td>
+          <input type="password" ng-model="data.password" placeholder="provide your password">
+        </td>
+      </tr>
+      <tr>
+        <td>Re-password:</td>
+        <td>
+          <input type="password" name="repassword" placeholder="provide the same password like above">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="submit" name="submit" ng-click="signupFunction()" value="submit">
+        </td>
+      </tr>
+    </form>
+  </table>
+</div>

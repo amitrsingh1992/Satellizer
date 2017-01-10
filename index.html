@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>AngularJS Satellizer</title>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/satellizer/dist/satellizer.min.js"></script>
+</head>
+
+<body ng-app="dashboard" >
+
+    <nav class="navbar navbar-inverse" ng-controller="main">
+        <a class="navbar-brand" href="#">AngularJS Satellizer</a>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a ui-sref="dashboard">Home</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li ng-show="!isAuth()"><a ui-sref="signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li ng-show="!isAuth()"><a ui-sref="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li ng-show="isAuth()"><a ui-sref="logout"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div ui-view></div>
+    </div>
+
+</body>
+<script src="app.js"></script>
+<script src="controllers/loginCtrl.js" charset="utf-8"></script>
+<script src="controllers/logoutCtrl.js" charset="utf-8"></script>
+<script src="controllers/signupCtrl.js" charset="utf-8"></script>
+<script src="controllers/dashboardCtrl.js" charset="utf-8"></script>
+
+</html>
