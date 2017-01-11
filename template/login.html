@@ -1,23 +1,19 @@
-<div class="container">
-  <table>
-    <form name="login" >
-      <tr>
-        <td>Email Id :</td>
-        <td>
-          <input type="email" ng-model="data.emailId" placeholder="provide your email id">
-        </td>
-      </tr>
-      <tr>
-        <td>Password:</td>
-        <td>
-          <input type="password" ng-model="data.password" placeholder="provide your password">
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <input type="submit" ng-click="loginFunction()" value="submit">
-        </td>
-      </tr>
+<div class="jumbotron">
+    <center>
+        <h2>Login Page</h2></center>
+</div>
+<div class="mainLogin" style="align:center">
+  <div class="loginPage">
+    <form name="login">
+
+        <strong>Email Id:</strong><br>
+        <input type="email" class="eid" name="email" ng-model="data.emailId" placeholder="provide your email id" required>
+        <br><strong>Password:</strong><br>
+        <input type="password" class="pw" ng-model="data.password" placeholder="provide your password" ng-pattern="/^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,32}$/" required>
+        <br>
+        <input type="submit" align="center" ng-click="loginFunction()" value="submit">
+
     </form>
-  </table>
+  </div>
+
 </div>

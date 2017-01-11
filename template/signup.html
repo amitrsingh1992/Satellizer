@@ -1,35 +1,17 @@
+<div class="jumbotron">
+    <center>
+        <h2>Signup Form</h2></center>
+
+</div>
+
 <div class="container">
-  <table>
+
     <form name="signup">
-      <tr>
-        <td>Email Id :</td>
-        <td>
-          <input type="email" ng-model="data.emailId" placeholder="provide your email id">
-        </td>
-      </tr>
-      <tr>
-        <td>Mobile No :</td>
-        <td>
-          <input type="text" name="mobileNo"  placeholder="please do not add std/ISD code">
-        </td>
-      </tr>
-      <tr>
-        <td>Password:</td>
-        <td>
-          <input type="password" ng-model="data.password" placeholder="provide your password">
-        </td>
-      </tr>
-      <tr>
-        <td>Re-password:</td>
-        <td>
-          <input type="password" name="repassword" placeholder="provide the same password like above">
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <input type="submit" name="submit" ng-click="signupFunction()" value="submit">
-        </td>
-      </tr>
+        <strong>Email Id:</strong><input type="email" class="eid" style="width:25%" ng-model="data.emailId" placeholder="provide your email id">
+        <strong>Mobile No:</strong><input type="text" class="num" style="width:25%" name="mobileNo" placeholder="please do not add std/ISD code" maxlength="10" ng-pattern=>
+        <strong>Password:</strong><input type="password" class="pw" style="width:25%" ng-model="data.password" placeholder="provide your password">
+        <strong>Re-Enter password</strong><input type="password" class="pw1" style="width:25%" name="repassword" placeholder="provide the same password like above">
+        <input type="submit" class="sub" align="center" style="margin-top:50px" name="submit" ng-click="signupFunction()" value="submit">
     </form>
-  </table>
+
 </div>

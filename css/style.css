@@ -1,0 +1,21 @@
+h2 {
+    font-weight: bold;
+    color: navy;
+}
+
+.loginPage {
+    color: lightblue;
+    font-weight: bolder;
+    margin: 20px;
+    border-spacing: 2px;
+    padding: 20px;
+}
+
+form{
+margin-left: 40%;
+margin-right:50%;
+width: 70%;
+}
+input{
+  word-wrap: normal;
+}
