@@ -7,11 +7,11 @@
     <form name="login">
 
         <strong>Email Id:</strong><br>
-        <input type="email" class="eid" name="email" ng-model="data.emailId" placeholder="provide your email id" required>
+        <input type="email" style="width:50%" class="eid" name="email" ng-model="data.emailId" placeholder="provide your email id" required>
         <br><strong>Password:</strong><br>
-        <input type="password" class="pw" ng-model="data.password" placeholder="provide your password" ng-pattern="/^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,32}$/" required>
-        <br>
-        <input type="submit" align="center" ng-click="loginFunction()" value="submit">
+        <input type="password" style="width:50%" class="pw" ng-model="data.password" placeholder="provide your password" ng-pattern="/^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,32}$/" required>
+        <br><span style="color:red" ng-show="loginFailed">Authentication Failed!!!<br></span>
+        <input type="submit" ng-disabled="loginProcess" style="margin-top:2em; margin-left:10em;" ng-click="loginFunction()" value="submit">
 
     </form>
   </div>

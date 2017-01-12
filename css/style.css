@@ -9,13 +9,32 @@ h2 {
     margin: 20px;
     border-spacing: 2px;
     padding: 20px;
+    border: 1px solid grey;
+    /*width:  40%;*/
+    border-radius: 4px;
 }
+.signupPage {
+    color: lightblue;
+    font-weight: bolder;
+    margin: 20px;
+    border-spacing: 2px;
+    padding: 20px;
+    border: 1px solid grey;
+    /*width:  40%;*/
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
 
 form{
 margin-left: 40%;
 margin-right:50%;
 width: 70%;
 }
+
 input{
   word-wrap: normal;
+  border-radius: 4px;
+  border-spacing: 1em;
+  line-height: 2em;
+  margin-top: 10px;
 }
