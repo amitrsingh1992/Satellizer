@@ -6,23 +6,25 @@ h2 {
 .loginPage {
     color: lightblue;
     font-weight: bolder;
-    margin: 20px;
+    /*margin: 2px;
     border-spacing: 2px;
-    padding: 20px;
-    border: 1px solid grey;
-    /*width:  40%;*/
-    border-radius: 4px;
+    padding:20px;
+    /*border: 1px solid grey;*/
+    /*border-radius: 4px;*/*/
 }
+/*#table{
+  border:1px solid grey;
+}*/
 .signupPage {
     color: lightblue;
     font-weight: bolder;
-    margin: 20px;
-    border-spacing: 2px;
-    padding: 20px;
-    border: 1px solid grey;
+    /*margin: 20px;*/
+    /*padding: 20px;*/
+    /*border-spacing: 2px;*/
+    /*border: 1px solid grey;*/
     /*width:  40%;*/
-    border-radius: 4px;
-    box-sizing: border-box;
+    /*border-radius: 4px;*/
+    /*box-sizing: border-box;*/
   }
 
 form{

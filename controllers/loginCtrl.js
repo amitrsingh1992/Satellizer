@@ -4,7 +4,7 @@ $scope.loginFunction=function(){
   $scope.loginProcess = true;
   $scope.loginFailed = false;
   console.log($scope.data);
-  $auth.login($scope.data,{"url":"http://192.168.0.171:3000/login"})
+  $auth.login($scope.data,{"url":"http://192.168.0.9:3000/login"})
   .then(function () {
     $state.go("dashboard");
   }).catch(function (data) {
